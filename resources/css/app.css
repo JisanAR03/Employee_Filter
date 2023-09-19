@@ -1,0 +1,209 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+  body {
+    font-family: "Inter", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
+  }
+  h1 {
+    @apply text-4xl md:text-[38px] lg:text-5xl font-bold text-h1Color;
+  }
+  h2 {
+    @apply text-[28px] md:text-3xl lg:text-4xl font-semibold text-h2Color;
+  }
+  h3 {
+    @apply text-[26px] md:text-[32px] font-normal text-h3Color;
+  }
+  h4 {
+    @apply text-[19px] md:text-xl lg:text-2xl font-semibold;
+  }
+  h5 {
+    @apply text-xl font-medium;
+  }
+  h6 {
+    @apply text-lg font-normal;
+  }
+  p {
+    @apply text-sm md:text-base font-normal;
+  }
+  .shadow-custom {
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  }
+  .footer-heading {
+    @apply text-bodyText font-semibold text-xl;
+  }
+  .footer-body {
+    @apply text-bodyText font-light text-lg md:text-[19px];
+  }
+  .footer-social-icon {
+    @apply h-5 w-5 rounded border border-solid border-bodyText stroke-2 p-0.5 font-bold text-bodyText;
+  }
+  .pricing_ul li:before {
+    content: "✓ ";
+    @apply text-base;
+  }
+  .accordion-header {
+    @apply py-4 px-6 cursor-pointer;
+  }
+  .accordion-body {
+    @apply max-h-0 overflow-hidden transition-all duration-200 ease-out;
+  }
+
+  .accordion-title {
+    @apply flex justify-between items-center w-full cursor-pointer p-4 text-sm text-left;
+  }
+  .accordion-content {
+    @apply px-4 text-sm;
+  }
+  .accordion-content p {
+    @apply text-sm;
+  }
+  .input-class {
+    @apply w-full border border-solid border-[#000000] border-opacity-20 h-10 rounded-md p-2;
+  }
+  .label-class {
+    @apply text-sm font-light text-bodyText;
+  }
+  .label-archive {
+    @apply text-base font-medium;
+  }
+
+}
+
+.btn-button{
+  @apply bg-button rounded-xl text-white py-2 px-4
+}
+.btn-buttonlg{
+  @apply bg-button rounded-lg text-white py-2
+}
+.btn-buttonLight{
+  @apply bg-button/30 rounded-xl
+}
+.btn-secondary{
+  @apply bg-primary rounded-full px-3 py-2 text-bodyText font-medium
+}
+.btn-white{
+  @apply rounded-xl border border-solid
+}
+.btn-whitelg{
+  @apply rounded-lg border border-solid py-2
+}
+.menu_bar{
+  @apply float-right
+}
+[x-cloak] {
+  display: none !important;
+}
+.dropdown{
+  @apply relative inline-block text-center
+}
+.dropdown-content{
+  @apply  hidden absolute bg-white w-40 overflow-auto shadow-custom z-10
+}
+.dropdown-content a{
+  @apply px-4 py-3 block
+}
+
+.signup {
+  position: relative;
+  display: inline-block;
+}
+.show{
+  display: block;
+}
+.accordion-item.active .accordion-title {
+  font-weight: 500;
+}
+.accordion-item.active .accordion-content {
+  display: block;
+}
+.upAC{
+  display: none;
+}
+input[type=date]:required:invalid::-webkit-datetime-edit {
+  color: transparent;
+}
+input[type=date]:focus::-webkit-datetime-edit {
+  color: black !important;
+}
+.crusel-cus-cls {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.employerDropdown, .candidateDropdown{
+  border-radius: 15px;
+}
+.cusCSLCLS, .crusel-cus-cls{
+  width: 90%;
+}
+.cus-shdw{
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+.sfc{
+  padding-left: 2rem; padding-right: 2rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .sidebar {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .no-pfmv{
+    padding-bottom: 0;
+  }
+  .no-mimv{
+    margin-top: 0;
+  }
+  .red-mimv{
+    margin-top: 1rem;
+  }
+  .fdc-imv{
+    flex-direction: column;
+  }
+  .mt-imv{
+    margin-top: 0.5rem;
+  }
+  .fWIMV{
+    width: 100%;
+  }
+  .eWIMV{
+    width: 79%;
+  }
+  .hFMV{
+    display: none;
+  }
+  .fCFMV{
+    flex-direction: column;
+  }
+  .fBHFMV{
+    flex-basis: 100%;
+  }
+  .dIBFMV{
+    display: inline-block;
+  }
+  .mTFMV{
+    margin-top: 1rem;
+  }
+  .mBFMV{
+    margin-bottom: 1rem;
+  }
+  .aSNFMV{
+    align-self: normal;
+  }
+  .nJCFMV{
+    justify-content: flex-start;
+  }
+  .tRPFMV{
+    padding: 2rem !important;
+  }
+  .mTIPXFMV{
+    margin-top: 10px;
+  }
+}
